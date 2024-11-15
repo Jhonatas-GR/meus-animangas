@@ -1,0 +1,7 @@
+:root {
+    --primary-color: #4CAF50; /* Verde */
+    --secondary-color: #333;   /* Cinza escuro */
+    --background-color: #f0f0f0; /* Fundo claro */
+    --text-color: #333;        /* Texto escuro */
+    --footer-color: #444;      /* Cor do footer */
+}

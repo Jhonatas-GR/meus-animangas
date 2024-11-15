@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-image: url("https://c.wallhere.com/photos/0d/c6/Kono_Subarashii_Sekai_ni_Shukufuku_wo_Aqua_KonoSuba_4K_anime_girls_humor-2239110.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    filter: blur(5px); /* Desfoca a imagem */
+}
+
+main {
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o main ocupe pelo menos toda a altura da tela */
+    position: relative; /* Para posicionar o conteúdo sobre o fundo desfocado */
+    padding: 20px;
+    z-index: 1; /* Mantém o conteúdo acima do fundo */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column; /* Coloca os pôsteres em coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.poster {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    width: 200px; /* Largura fixa para todos os pôsteres */
+    height: 300px; /* Altura fixa para garantir tamanho consistente */
+}
+
+.poster img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: 100%; /* Faz a imagem ocupar toda a altura do container */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Bordas com RGB */
+.poster:nth-child(1) img {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, black, blue, red) 1;
+}
+
+.poster:nth-child(2) img {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, black, darkblue, orange) 1;
+}
+
+.poster:nth-child(3) img {
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, purple, black, gray) 1;
+}
+
+.poster p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}

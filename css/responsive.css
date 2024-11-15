@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; /* Coloca os pôsteres em coluna */
+        align-items: center; /* Centraliza os itens */
+        justify-content: center; /* Garante que os itens estejam centralizados */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%; /* Imagens ocupam 100% da largura em telas menores */
+    }
+}
+0
